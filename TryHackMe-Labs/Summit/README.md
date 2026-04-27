@@ -1,6 +1,6 @@
 # SUMMIT
 
-Neste laboratório do TryHackMe o objetivo era, seguindo o Framweork de Defesa Pyramid of Pain e também o MITRE ATT&CK, realizar uma simulação de ameaça e teste de engenharia de deteccção de uma ferramenta fictícia chamada de PicoSecure.
+Neste laboratório do TryHackMe o objetivo era, seguindo o Frameweork de Defesa Pyramid of Pain e também o MITRE ATT&CK, realizar uma simulação de ameaça e teste de engenharia de deteccção de uma ferramenta fictícia chamada de PicoSecure.
 
 
 O laboratório avança na medida que o arquivo nocivo é disponibilizado a cada etapa para análise em ambiente controlado (Malware Sandbox), sendo que a cada etapa concluída o grau de dificuldade para contenção da atividade do malware aumenta.
@@ -53,8 +53,8 @@ Para conter a atividade maliciosa do atacante, regras de monitoramento e conten�
 <img width="1052" height="661" alt="image" src="https://github.com/user-attachments/assets/c938047b-f316-49aa-829e-216cecc0676f" />
 
 ## Bloqueio do funcionamento da ferramenta de ataque
-* **Scan do arquivo em Sandbox:** Com a análise do arquivo "sample5.exe" é possível visualizar uma enornem quantidade de requisições enviadas para o mesmo IP, como já foi dito, bloquear HASH, IP e Domínio não são muito viáveis.
-* Analisando o registro de LOG do sistema é possível indentificar um padrão nas requisições.
+* **Scan do arquivo em Sandbox:** Com a análise do arquivo "sample5.exe" é possível visualizar uma enorme quantidade de requisições enviadas para o mesmo IP, como já foi dito, bloquear HASH, IP e Domínio não são muito viáveis.
+* Analisando o registro de LOG do sistema é possível identificar um padrão nas requisições.
 
 <img width="1058" height="855" alt="image" src="https://github.com/user-attachments/assets/1c59c3cc-bb08-4c9c-bef9-cbdb69b8c732" />
 
@@ -79,3 +79,12 @@ Para conter a atividade maliciosa do atacante, regras de monitoramento e conten�
 
 ---
 <img width="1068" height="751" alt="image" src="https://github.com/user-attachments/assets/89b061a6-62cd-444a-bbbe-7b6ff383ecd6" />
+
+
+## Lições Aprendidas:
+
+* Bloqueios baseados em IOCs estáticos (hashes, IPs, domínios) têm vida curta, um atacante troca esses artefatos em minutos com custo mínimo
+* Conforme subimos na Pyramid of Pain, o custo para o atacante se adaptar aumenta drasticamente
+* Regras SIGMA com base em comportamento (modificações no sistema, padrão de tráfego, execução de comandos) são muito mais duradouras e eficazes do que blocklists
+* O SYSMON é uma ferramenta essencial para visibilidade dentro do host — sem ele, grande parte do comportamento do malware passaria despercebido
+* Mascarar tráfego malicioso como comunicação legítima (ex: requisições a serviços Microsoft) é uma técnica comum para evasão de detecção por IP/domínio
