@@ -8,6 +8,6 @@ Aqui estão os Write-ups dos labs que completei na plataforma [TryHackMe](https:
 
 | Lab | Área | Dificuldade |
 |-----|------|-------------|
-| [Summit](./Summit/) | Blue Team | Fácil |
+| [Summit](TryHackMe-Labs/Summit) | Blue Team | Fácil |
 
 ---
