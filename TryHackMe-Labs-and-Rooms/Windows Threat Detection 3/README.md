@@ -23,10 +23,7 @@ já que pode existir outros arquivos não nocivos nessa pasta Startup que consta
 o arquivo adicionado em Details.
 
 ## Achado Principal:
-A partir de diferentes abordagem foi possível checar tentativas mal sucedidas de login e posteriormente um acesso confirmado a conta administrador, a qual criou um novo usuario com nome "support" para servir como backdoor e
-adicionou o mesmo a um grupo com privilégios. Um malware então foi injetado chamado Nessie, o qual foi atrelado a um serviço chamado Data Protection Service. Um Cavalo de Troia também existia e foi vinculado a uma task
-que o executava após a inicialização do sistema e estava disfarçada com o nome AmazonSync. Por fim outro malware existia e estava disposto na pastar Startup, e outro chamado Kitten era executado pelo explorer.exe porém
-a partir de uma chave chamada Basket contida em run, que o executava também logo após a inicialização do sistema. 
+A partir de diferentes abordagens foi possível checar tentativas mal sucedidas de login e posteriormente um acesso confirmado a conta administrador, a qual criou um novo usuario com nome "support" para servir como backdoor e adicionou o mesmo a um grupo com privilégios. Um malware então foi injetado chamado Nessie, o qual foi atrelado a um serviço chamado Data Protection Service. Um Cavalo de Troia também existia e foi vinculado a uma task que o executava após a inicialização do sistema e estava disfarçada com o nome AmazonSync. Por fim outro malware existia e estava disposto na pastar Startup, e outro chamado Kitten era executado pelo explorer.exe porém a partir de uma chave chamada Basket contida em run, que o executava também logo após a inicialização do sistema. 
 
 ## Indicadores/Evidência:
 * Logs do Event Viewer
