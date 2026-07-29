@@ -1,13 +1,14 @@
-# TryHackMe Labs
+# TryHackMe Labs and Rooms
 
-Aqui estão os Write-ups dos labs que completei na plataforma [TryHackMe](https://tryhackme.com), com foco em Blue Team e segurança defensiva.
+Aqui estão os Write-ups dos labs e rooms que completei na plataforma [TryHackMe](https://tryhackme.com), com foco em Blue Team e segurança defensiva.
 
 ---
 
-## Labs
+## Busca rápida 
 
-| Lab | Área | Dificuldade |
-|-----|------|-------------|
-| [Summit](./Summit) | Blue Team | Fácil |
+| Nome | Área | Dificuldade | Path |
+|-----|------|-------------|----------|
+| [Summit](./Summit) | Blue Team | Fácil | SOC Level 1 |
+| Windows Threat Detection 3](./Windows Threat Detection 3) | Blue Team | Médio | SOC Level 1 |
 
 ---
