@@ -10,5 +10,5 @@ Aqui estão os Write-ups dos labs e rooms que completei na plataforma [TryHackMe
 |-----|------|-------------|----------|
 | [Summit](./Summit) | Blue Team | Fácil | SOC Level 1 |
 | [Windows Threat Detection 3](<./Windows Threat Detection 3>) | Blue Team | Médio | SOC Level 1 |
-
+| [Shadow Trace](<./Shadow Trace>) | Blue Team | Fácil | SOC Level 1 |
 ---
