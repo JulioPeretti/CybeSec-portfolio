@@ -44,6 +44,19 @@ sc.exe \\TEMPEST create TempestUpdate2 binpath= C:\ProgramData\final.exe start= 
 * Credencial comprometida: TEMPEST\benimaru / infernotempest
 * Usuários locais criados pelo atacante: shion (administrators), shuma
 * Serviço malicioso persistente: TempestUpdate2 → C:\ProgramData\final.exe (start automático)
+* Hashes SHA256 dos artefatos analisados:
+  * capture.pcapng:
+    * CB3A1E6ACFB246F256FBFEFDB6F494941AA30A5A7C3F5258C3E63CFA27A23DC6
+  * sysmon.evtx:
+    * 665DC3519C2C235188201B5A8594FEA205C3BCBC75193363B87D2837ACA3C91F
+  * windows.evtx:
+    * D0279D5292BC5B25595115032820C978838678F4333B725998CFE9253E186D60
+  * first.exe (payload de segunda etapa):
+    * CE278CA242AA2023A4FE04067B0A32FBD3CA1599746C160949868FFC7FC3D7D8
+  * ch.exe (Chisel, reverse SOCKS proxy):
+    * 8A99353662CCAE117D2BB22EFD8C43D7169060450BE413AF763E8AD7522D2451
+  * spf.exe (PrintSpoofer):
+    * 8524FBC0D73E711E69D60C64F1F1B7BEF35C986705880643DD4D5E17779E586D
   
 * Técnicas MITRE ATT&CK:
 
